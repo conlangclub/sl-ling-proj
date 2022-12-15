@@ -659,7 +659,7 @@ progress {
     max-width: 1320px;
   }
 }
-.row {
+.row, .dl-aligned {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -668,7 +668,7 @@ progress {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
-.row > * {
+.row > *, .dl-aligned > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
@@ -925,7 +925,7 @@ progress {
     flex: 0 0 auto;
     width: 8.33333333%;
   }
-  .col-sm-2 {
+  .col-sm-2, .dl-aligned > dt {
     flex: 0 0 auto;
     width: 16.66666667%;
   }
@@ -957,7 +957,7 @@ progress {
     flex: 0 0 auto;
     width: 75%;
   }
-  .col-sm-10 {
+  .col-sm-10, .dl-aligned > dd {
     flex: 0 0 auto;
     width: 83.33333333%;
   }

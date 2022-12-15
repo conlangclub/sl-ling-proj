@@ -26,3 +26,15 @@
 figcaption {
     font-style: italic;
 }
+
+.dl-aligned {
+    @extend .row;
+
+    > dt {
+        @extend .col-sm-2;
+    }
+
+    > dd {
+        @extend .col-sm-10;
+    }
+}
