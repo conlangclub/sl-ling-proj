@@ -1,0 +1,28 @@
+@use "../node_modules/bootstrap/scss/bootstrap";
+
+.jumbotron {
+    background-color: #91008c;
+    background-image: url("../images/conlang-flag.svg");
+    background-repeat: no-repeat;
+    background-position: center bottom -80px;
+    background-size: auto 20rem;
+    color: white;
+    height: 22rem;
+    @extend .mb-3;
+}
+
+#club-projects {
+    > section {
+        @extend .mb-3;
+    }
+}
+
+.igt {
+    td {
+        @extend .pe-3;
+    }
+}
+
+figcaption {
+    font-style: italic;
+}
