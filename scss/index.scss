@@ -1,0 +1,13 @@
+@use "../node_modules/bootstrap/scss/bootstrap";
+
+#club-projects {
+    > section {
+        @extend .mb-3;
+    }
+}
+
+#officers {
+    .card {
+        @extend .h-100;
+    }
+}

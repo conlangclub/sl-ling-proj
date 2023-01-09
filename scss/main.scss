@@ -11,12 +11,6 @@
     @extend .mb-3;
 }
 
-#club-projects {
-    > section {
-        @extend .mb-3;
-    }
-}
-
 .igt {
     td {
         @extend .pe-3;

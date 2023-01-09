@@ -659,7 +659,7 @@ progress {
     max-width: 1320px;
   }
 }
-.row, .dl-aligned {
+.row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -668,7 +668,7 @@ progress {
   margin-right: calc(-0.5 * var(--bs-gutter-x));
   margin-left: calc(-0.5 * var(--bs-gutter-x));
 }
-.row > *, .dl-aligned > * {
+.row > * {
   flex-shrink: 0;
   width: 100%;
   max-width: 100%;
@@ -925,7 +925,7 @@ progress {
     flex: 0 0 auto;
     width: 8.33333333%;
   }
-  .col-sm-2, .dl-aligned > dt {
+  .col-sm-2 {
     flex: 0 0 auto;
     width: 16.66666667%;
   }
@@ -957,7 +957,7 @@ progress {
     flex: 0 0 auto;
     width: 75%;
   }
-  .col-sm-10, .dl-aligned > dd {
+  .col-sm-10 {
     flex: 0 0 auto;
     width: 83.33333333%;
   }
@@ -7251,7 +7251,7 @@ textarea.form-control-lg {
   height: 75% !important;
 }
 
-.h-100 {
+.h-100, #officers .card {
   height: 100% !important;
 }
 
@@ -7609,7 +7609,7 @@ textarea.form-control-lg {
   margin-bottom: 0.5rem !important;
 }
 
-.mb-3, .jumbotron {
+.mb-3, #club-projects > section {
   margin-bottom: 1rem !important;
 }
 
@@ -7773,7 +7773,7 @@ textarea.form-control-lg {
   padding-right: 0.5rem !important;
 }
 
-.pe-3, .igt td {
+.pe-3 {
   padding-right: 1rem !important;
 }
 
@@ -10769,18 +10769,5 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.jumbotron {
-  background-color: #91008c;
-  background-image: url("../images/conlang-flag.svg");
-  background-repeat: no-repeat;
-  background-position: center bottom -80px;
-  background-size: auto 20rem;
-  color: white;
-  height: 22rem;
-}
 
-figcaption {
-  font-style: italic;
-}
-
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=index.css.map */
