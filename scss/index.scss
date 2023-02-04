@@ -13,7 +13,11 @@
 }
 
 .quick-info {
-    @extend .card;
-    @extend .float-md-end;
-    width: 20%
+    @extend .row;
+    @extend .text-center;
+    @extend .w-50;
+    @extend .mx-auto;
+    @extend .mb-4;
+    @extend .mt-4;
+    @extend .lead;
 }
