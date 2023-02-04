@@ -11,3 +11,9 @@
         @extend .h-100;
     }
 }
+
+.quick-info {
+    @extend .card;
+    @extend .float-md-end;
+    width: 20%
+}
