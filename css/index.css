@@ -7211,7 +7211,7 @@ textarea.form-control-lg {
   width: 25% !important;
 }
 
-.w-50, .quick-info {
+.w-50 {
   width: 50% !important;
 }
 
@@ -10767,6 +10767,15 @@ textarea.form-control-lg {
   }
   .d-print-none {
     display: none !important;
+  }
+}
+.quick-info {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .quick-info {
+    width: 50%;
   }
 }
 

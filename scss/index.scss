@@ -1,4 +1,4 @@
-@use "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap";
 
 #club-projects {
     > section {
@@ -15,9 +15,16 @@
 .quick-info {
     @extend .row;
     @extend .text-center;
-    @extend .w-50;
     @extend .mx-auto;
     @extend .mb-4;
     @extend .mt-4;
     @extend .lead;
+
+    width: 100%;
+}
+
+@include media-breakpoint-up(lg) {
+    .quick-info {
+        width: 50%;
+    }
 }
