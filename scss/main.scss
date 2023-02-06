@@ -32,3 +32,15 @@ figcaption {
         @extend .col-sm-10;
     }
 }
+
+.fig-float-end {
+    @extend .d-flex;
+    @extend .align-items-center;
+    @extend .flex-column;
+    @extend .float-lg-end;
+
+    >img {
+        @extend .p-3;
+        @extend .ms-3;
+    }
+}

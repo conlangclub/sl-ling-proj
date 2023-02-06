@@ -6974,7 +6974,7 @@ textarea.form-control-lg {
   display: table-cell !important;
 }
 
-.d-flex {
+.d-flex, .fig-float-end {
   display: flex !important;
 }
 
@@ -7279,7 +7279,7 @@ textarea.form-control-lg {
   flex-direction: row !important;
 }
 
-.flex-column {
+.flex-column, .fig-float-end {
   flex-direction: column !important;
 }
 
@@ -7351,7 +7351,7 @@ textarea.form-control-lg {
   align-items: flex-end !important;
 }
 
-.align-items-center {
+.align-items-center, .fig-float-end {
   align-items: center !important;
 }
 
@@ -7637,7 +7637,7 @@ textarea.form-control-lg {
   margin-left: 0.5rem !important;
 }
 
-.ms-3 {
+.ms-3, .fig-float-end > img {
   margin-left: 1rem !important;
 }
 
@@ -7665,7 +7665,7 @@ textarea.form-control-lg {
   padding: 0.5rem !important;
 }
 
-.p-3 {
+.p-3, .fig-float-end > img {
   padding: 1rem !important;
 }
 
@@ -9239,7 +9239,7 @@ textarea.form-control-lg {
   .float-lg-start {
     float: left !important;
   }
-  .float-lg-end {
+  .float-lg-end, .fig-float-end {
     float: right !important;
   }
   .float-lg-none {
