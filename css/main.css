@@ -6986,7 +6986,7 @@ textarea.form-control-lg {
   display: none !important;
 }
 
-.shadow {
+.shadow, .jumbotron {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
 }
 
@@ -7722,7 +7722,7 @@ textarea.form-control-lg {
   padding-bottom: 0.5rem !important;
 }
 
-.py-3 {
+.py-3, .jumbotron {
   padding-top: 1rem !important;
   padding-bottom: 1rem !important;
 }
@@ -10773,12 +10773,21 @@ textarea.form-control-lg {
   background-color: #91008c;
   background-image: url("../images/conlang-flag.svg");
   background-repeat: no-repeat;
-  background-position: center bottom -80px;
-  background-size: auto 20rem;
+  background-position: center bottom -40px;
+  background-size: auto 10rem;
   color: white;
-  height: 20rem;
+  height: 10rem;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
 
+@media (min-width: 768px) {
+  .jumbotron {
+    background-image: url("../images/conlang-flag.svg");
+    background-position: left bottom -80px;
+    background-size: auto 20rem;
+    height: auto;
+  }
+}
 figcaption {
   font-style: italic;
 }
