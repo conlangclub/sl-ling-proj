@@ -2,7 +2,7 @@ name: Conlang Club at UW
 
 domain: conlang.club
 url: https://conlang.club
-baseurl: /site-testing
+baseurl: /
 
 sass:
     load_paths:
