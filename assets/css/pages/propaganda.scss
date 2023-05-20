@@ -1,0 +1,9 @@
+.page-propaganda {
+  figure {
+    @extend .mb-5;
+  }
+
+  figcaption {
+    font-style: normal;
+  }
+}
