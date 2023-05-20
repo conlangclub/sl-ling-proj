@@ -1,0 +1,10 @@
+name: Conlang Club at UW
+
+domain: conlang.club
+url: https://conlang.club
+baseurl: /site-testing
+
+sass:
+    load_paths:
+        - assets/css
+        - vendor/ruby/3.0.0/gems/bootstrap-5.2.3/assets/stylesheets

@@ -1,0 +1,30 @@
+.page-index {
+    #club-projects {
+        > section {
+            @extend .mb-5;
+        }
+    }
+
+    #officers {
+        .card {
+            @extend .h-100;
+        }
+    }
+
+    .quick-info {
+        @extend .row;
+        @extend .text-center;
+        @extend .mx-auto;
+        @extend .mb-4;
+        @extend .mt-4;
+        @extend .lead;
+
+        width: 100%;
+    }
+
+    @include media-breakpoint-up(lg) {
+        .quick-info {
+            width: 50%;
+        }
+    }
+}
