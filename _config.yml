@@ -3,6 +3,7 @@ name: Conlang Club at UW
 domain: conlang.club
 url: https://conlang.club
 baseurl: /
+theme: ""
 
 sass:
     load_paths:
