@@ -7,4 +7,3 @@ baseurl: /
 sass:
     load_paths:
         - assets/css
-        - vendor/ruby/3.0.0/gems/bootstrap-5.2.3/assets/stylesheets
