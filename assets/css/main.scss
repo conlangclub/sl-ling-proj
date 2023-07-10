@@ -48,9 +48,10 @@ figcaption {
 }
 
 .fig-float-end {
-    @extend .d-flex;
-    @extend .justify-content-center;
     @extend .float-lg-end;
+
+    display: flex;
+    justify-content: center;
 
     >img {
         @extend .p-3;
