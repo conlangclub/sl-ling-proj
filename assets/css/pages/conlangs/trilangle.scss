@@ -1,0 +1,27 @@
+.page-trilangle-index {
+  @extend .container;
+  @extend .clearfix;
+
+  .goals {
+    h3 {
+      @extend .h4;
+    }
+  }
+
+  .trilangle-gloss {
+    @extend .row;
+    @extend .row-cols-auto;
+
+    align-items: center;
+    justify-content: center;
+
+    >div {
+      @extend .col;
+    }
+
+    .trilangle {
+      display: flex;
+      justify-content: end;
+    }
+  }
+}
