@@ -10,7 +10,6 @@
 
   .trilangle-gloss {
     @extend .row;
-    @extend .row-cols-auto;
 
     align-items: center;
     justify-content: center;
@@ -20,8 +19,10 @@
     }
 
     .trilangle {
+      @extend .justify-content-sm-end;
+      justify-content: center;
+
       display: flex;
-      justify-content: end;
     }
   }
 }
