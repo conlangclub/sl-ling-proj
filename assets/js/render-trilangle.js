@@ -16,7 +16,7 @@ const OFFSET = 0; // padding from top right edge of SVG
 // when we get our output from clipper
 const CLIPPER_GLOBAL_SCALING = 10000;
 
-class TrilangleSentence extends HTMLDivElement {
+class TrilangleSentence extends HTMLElement {
   constructor() {
     super();
 
@@ -29,7 +29,9 @@ class TrilangleSentence extends HTMLDivElement {
   }
 }
 
-customElements.define("trilangle-sentence", TrilangleSentence, { extends: "div" });
+customElements.define("trilangle-sentence", TrilangleSentence);
+console.log("asdfasdf");
+
 
 function renderSentence(tokens, width, height) { 
   let container = d3.create("svg")
@@ -89,19 +91,21 @@ function renderSentence(tokens, width, height) {
 
 /* Get the vertices for a triangle on the triangle grid */
 function triangleToVertices(triangle, scaleFactor, offset) {
-  let [q, r, u] = triangle;
+  const height = .866; // The base of the equilateral triangle is 1 unit long, so the height is  sqrt(3)/2 = .866 (cf. 30-60-90 triangles)
+  const [q, r, u] = triangle;
   let vertices;
+
   if (u === 1) {
     vertices = [
-      [.5+q+1, r+1],
-      [.5+q+.5, r],
-      [.5+q, r+1]
+      [.5+q+1, r*height + height],
+      [.5+q+.5, r * height],
+      [.5+q, r*height + height]
     ];
   } else {
     vertices = [
-      [.5+q, r+1],
-      [.5+q-.5, r],
-      [.5+q+.5, r]
+      [.5+q, r*height + height],
+      [.5+q-.5, r*height],
+      [.5+q+.5, r*height]
     ];
   }
   
@@ -145,12 +149,13 @@ function tokenToVertices(token, scaleFactor, offset) {
 
 /* Get the [x, y] of the text anchor point for a given Trilangle token */
 function tokenTextAnchor(token, scaleFactor, offset) {
+  const height = .866; // The base of the equilateral triangle is 1 unit long, so the height is  sqrt(3)/2 = .866 (cf. 30-60-90 triangles)
   const [q, r, u] = token.triangles[0];
   let anchor;
   if (u === 1) {
-    anchor = [.5+q+.5, r+.66];
+    anchor = [.5+q+.5, r*height + 2*height/3];
   } else {
-    anchor = [.5+q, r+.33];
+    anchor = [.5+q, r*height + height/3];
   }
 
   // horizontally stagger odd rows
