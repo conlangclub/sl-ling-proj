@@ -5,13 +5,18 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <meta property="og:title" content="Conlang Club at UW - {{ page.title }}" />
+  <meta property="og:title" content="Seattle Conlang Club - {{ page.title }}" />
+  <meta property="og:description" content="The official website of the Seattle Conlang Club" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://conlang.club/" />
   <meta property="og:image" content="/assets/images/conlang-flag.png" />
 
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+  {% endif %}
+
   <link rel="stylesheet" href="/assets/css/main.css">
-  <title>Conlang Club at UW - {{ page.title }}</title>
+  <title>Seattle Conlang Club - {{ page.title }}</title>
 </head>
 <body>
   {% include header.html %}
