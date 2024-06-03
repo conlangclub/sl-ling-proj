@@ -4,6 +4,8 @@ domain: conlang.club
 url: https://conlang.club
 baseurl: ""
 
-sass:
-    load_paths:
-        - assets/css
+plugins:
+    - jekyll-postcss
+
+postcss:
+    cache: false

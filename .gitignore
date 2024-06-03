@@ -10,3 +10,5 @@ _site/
 # Bundle's config.
 .bundle/
 /vendor/
+
+node_modules/
