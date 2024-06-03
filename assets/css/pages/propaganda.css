@@ -3,5 +3,6 @@
 }
 
 .page-propaganda figure {
-  @apply mb-5;
+  @apply mt-5;
+  @apply mb-10;
 }
