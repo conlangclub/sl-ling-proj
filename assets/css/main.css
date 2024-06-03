@@ -1,5 +1,81 @@
 ---
 ---
+@import "./assets/css/pages/index.css";
+@import "./assets/css/pages/propaganda.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.jumbotron {
+  background-image: url("../images/conlang-flag.svg");
+  background-repeat: no-repeat;
+  background-position: center bottom -40px;
+  background-size: auto 20rem;
+}
+
+@media screen and (min-width: 768px) {
+  .jumbotron {
+    background-position: left bottom -80px;
+    background-size: auto 20rem;
+    height: auto;
+  }
+}
+
+.lead {
+  @apply font-light;
+  @apply text-xl;
+}
+
+.lead strong {
+  @apply font-medium;
+}
+
+.text-muted {
+  @apply text-slate-600;
+}
+
+h2 {
+  @apply text-3xl;
+  @apply mb-3;
+}
+
+h3 {
+  @apply text-3xl;
+}
+
+.fig-float-end {
+  @apply lg:float-end;
+  @apply flex;
+  @apply justify-center;
+  @apply ms-5;
+}
+
+a {
+  @apply text-blue-600;
+  @apply underline;
+}
+
+a:hover {
+  @apply text-blue-800;
+}
+
+a:visited {
+  @apply text-purple-800;
+}
+
+.nav-link {
+  @apply text-stone-400;
+  @apply visited:text-stone-400;
+  @apply hover:text-white;
+  @apply no-underline;
+}
+
+p {
+  @apply mb-3;
+}
+
+.igt td {
+  @apply pe-3;
+}
