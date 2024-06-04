@@ -23,7 +23,9 @@
 
   <header class="container mb-5">
     <h2 class="mb-0">SCC Sign Language Linguistics Project</h2>
-    <a href="/sign-ling/index.html" class="no-underline">← Project home</a>
+    {% if page.title != "Index" %}
+      <a href="/sign-ling/index.html" class="no-underline">← Project home</a>
+    {% endif %}
   </header>
 
   {{ content }}
