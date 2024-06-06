@@ -15,10 +15,10 @@ description: Homepage of the SCC Sign Language Linguistics Project
 
   <section>
     <h3>Table of contents</h3>
-    <ol class="list-disc list-inside">
+    <ol>
       <li>
         <span class="font-bold">Phonology</span>
-        <ol class="list-disc ps-10">
+        <ol>
           {% for item in site.handbook %}
             {% if item.chapter == 'Phonology' %}
               <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a> - {{ item.description }}</li>

@@ -91,3 +91,9 @@ p {
 .igt td {
   @apply pe-3;
 }
+
+li {
+  @apply list-disc;
+  @apply list-inside;
+  @apply ps-5;
+}
