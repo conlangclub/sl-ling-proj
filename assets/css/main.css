@@ -1,8 +1,5 @@
 ---
 ---
-@import "./assets/css/pages/index.css";
-@import "./assets/css/pages/propaganda.css";
-
 @layer utilities {
   .small-caps {
     font-variant: all-small-caps;
@@ -12,6 +9,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: HamNoSys;
+  src: url( {{ '/assets/fonts/hamnosysunicode-webfont.woff2' | relative_url }} );
+  size-adjust: 180%;
+}
+
+ham-signs {
+  font-family: HamNoSys;
+}
 
 .jumbotron {
   background-image: url("../images/conlang-flag.svg");

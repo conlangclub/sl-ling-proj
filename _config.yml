@@ -5,10 +5,9 @@ url: https://conlang.club
 baseurl: ""
 
 collections:
-    sign-ling:
+    handbook:
         output: true
         order:
-            - index.html
             - phonology/sign-constituents.html
             - phonology/handshape.html
             - phonology/transcription.html

@@ -1,8 +1,0 @@
-.page-propaganda figure > a {
-  @apply inline-block;
-}
-
-.page-propaganda figure {
-  @apply mt-5;
-  @apply mb-10;
-}
