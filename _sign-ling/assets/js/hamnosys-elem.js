@@ -211,7 +211,9 @@
     connectedCallback() {
       let hamnosysSent = [];
       for (let sign of this.textContent.split(new RegExp('\\s+'))) {
-        let hamnosysSign = "";
+        if (sign === '') continue;
+
+        let hamnosysSign = '';
         for (let symbolName of sign.split(new RegExp(','))) {
           if (symbolName in HAMNOSYS_NAMES) {
             hamnosysSign = hamnosysSign + HAMNOSYS_NAMES[symbolName];
