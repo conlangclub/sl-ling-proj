@@ -21,13 +21,13 @@ description: Homepage of the SCC Sign Language Linguistics Project
         <ol class="list-disc ps-10">
           {% for item in site.handbook %}
             {% if item.chapter == 'Phonology' %}
-              <li><a href="{{ item.url | relative_link }}">{{ item.title }}</a> - {{ item.description }}</li>
+              <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a> - {{ item.description }}</li>
             {% endif %}
           {% endfor %}
         </ol>
       </li>
 
-      <li><a href="{{ 'links.html' | relative_link }}">Links</a> - Links to useful sign language linguistics resources</li>
+      <li><a href="{{ 'links.html' | relative_url }}">Links</a> - Links to useful sign language linguistics resources</li>
     </ol>
   </section>
 </main>
