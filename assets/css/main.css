@@ -92,8 +92,15 @@ p {
   @apply pe-3;
 }
 
-li {
-  @apply list-disc;
+ul, ol {
   @apply list-inside;
   @apply ps-5;
+}
+
+ul {
+  @apply list-disc;
+}
+
+ol {
+  @apply list-decimal;
 }
