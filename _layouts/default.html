@@ -21,13 +21,6 @@
 <body>
   {% include header.html %}
 
-  <header class="container mb-5">
-    <h2 class="mb-0">SCC Sign Language Linguistics Project</h2>
-    {% if page.title != "Index" %}
-      <a href="{{ '/index.html' | relative_url }}" class="no-underline">← Project home</a>
-    {% endif %}
-  </header>
-
   {{ content }}
 
   <footer class="container mt-5 clear-both">
