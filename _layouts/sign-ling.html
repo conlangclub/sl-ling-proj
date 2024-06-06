@@ -16,6 +16,7 @@
   {% endif %}
 
   <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/sign-ling/assets/css/hamnosys-elem.css">
   <title>{{ page.title }} - SCC Sign Language Linguistics Project</title>
 </head>
 <body>
@@ -24,14 +25,16 @@
   <header class="container mb-5">
     <h2 class="mb-0">SCC Sign Language Linguistics Project</h2>
     {% if page.title != "Index" %}
-      <a href="/sign-ling/index.html" class="no-underline">← Project home</a>
+      <a href="{{ '/sign-ling/index.html' | relative_link }}" class="no-underline">← Project home</a>
     {% endif %}
   </header>
 
   {{ content }}
 
-  <footer class="container mt-5">
+  <footer class="container mt-5 clear-both">
     <p class="border-t border-slate-300 pt-5">The SCC Sign Language Linguistics Project is managed by and copyright © 2024 <a href="https://fredchan.org">Frederick Chan</a> and made available to the public under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA 4.0</a> license.</p>
   </footer>
+
+  <script src="{{ '/sign-ling/assets/js/hamnosys-elem.js' | relative_link }}"></script>
 </body>
 </html>

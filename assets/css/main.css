@@ -3,10 +3,15 @@
 @import "./assets/css/pages/index.css";
 @import "./assets/css/pages/propaganda.css";
 
+@layer utilities {
+  .small-caps {
+    font-variant: all-small-caps;
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 .jumbotron {
   background-image: url("../images/conlang-flag.svg");
@@ -32,8 +37,8 @@
   @apply font-medium;
 }
 
-.text-muted {
-  @apply text-slate-600;
+cite, .text-muted {
+  @apply text-slate-500;
 }
 
 h2 {
