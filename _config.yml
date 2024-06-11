@@ -10,6 +10,7 @@ collections:
         order:
             - phonology/sign-constituents.html
             - phonology/handshape.html
+            - phonology/location.html
             - phonology/transcription.html
             - phonology/sign-types.html
             - links.html
