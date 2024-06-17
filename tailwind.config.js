@@ -16,6 +16,9 @@ module.exports = {
       colors: {
         'conlangpurple': {
           DEFAULT: '#91008c',
+        },
+        'conlangteal': {
+          DEFAULT: '#00839a',
         }
       },
       textShadow: {
