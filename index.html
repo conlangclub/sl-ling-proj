@@ -29,6 +29,17 @@ description: The Seattle Conlang Club Sign Language Linguistics Project aims to 
         </ol>
       </li>
 
+      <li>
+        <span class="font-bold">Morphology</span>
+        <ol class="list-disc">
+          {% for item in site.handbook %}
+            {% if item.chapter == 'Morphology' %}
+              <li><a href="{{ item.url | relative_url }}">{{ item.title }}</a> - {{ item.description }}</li>
+            {% endif %}
+          {% endfor %}
+        </ol>
+      </li>
+
       <li><a href="{{ 'links.html' | relative_url }}">Links</a> - Links to useful sign language linguistics resources</li>
     </ol>
   </section>
