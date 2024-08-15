@@ -17,6 +17,10 @@
     <meta name="description" content="{{ page.description }}">
   {% endif %}
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100..900&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   <title>{{ page.title }} - SCC Sign Language Linguistics Project</title>
 </head>
@@ -25,9 +29,7 @@
 
   {{ content }}
 
-  <footer class="container mt-5 clear-both">
-    <p class="border-t border-slate-300 pt-5">The SCC Sign Language Linguistics Project is managed by and copyright © 2024 <a href="https://fredchan.org">Frederick Chan</a> and made available to the public under a <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons BY-NC-SA 4.0</a> license.</p>
-  </footer>
+  {% include footer.html %}
 
   <script src="{{ '/assets/js/hamnosys-elem.js' | relative_url }}"></script>
 </body>
